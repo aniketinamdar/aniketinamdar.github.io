@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aniket Inamdar</title>
+  <meta name="description" content="Aniket Inamdar — Machine Learning Engineer working on AI agents, LLM platforms and evaluation. B.Tech in Computer Science, MIT World Peace University.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Main">
+      <a class="brand" href="./">Aniket Inamdar</a>
+      <ul class="nav-links">
+        <li><a href="./" aria-current="page">Home</a></li>
+        <li><a href="resume/">Resume</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><button class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Machine Learning Engineer</p>
+        <h1>Building reliable AI agents and the platforms behind them.</h1>
+        <p class="lead">I'm Aniket, an ML engineer at Sleek, Singapore. I work on durable agent workflows, LLM infrastructure and evaluation.</p>
+        <div class="btn-row">
+          <a class="btn primary" href="resume/">View resume</a>
+          <a class="btn" href="mailto:aniketinamdar02@gmail.com">Email me</a>
+          <a class="btn" href="https://linkedin.com/in/inamdaraniket" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/aniketinamdar" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About</h2>
+      <p>I graduated in Computer Science and Engineering from MIT World Peace University (CGPA 9.26/10) and have worked as a Machine Learning Engineer at Sleek since August 2024.</p>
+      <p>My work centres on making LLM-based systems dependable in production: fault-tolerant agent execution, secure tool access through MCP, shared model infrastructure, and the tracing and evaluation needed to measure quality across teams.</p>
+      <p>Earlier, I built AR and educational games in Unity, and published a poster paper on interoperability between blockchain networks.</p>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <article class="entry">
+        <div class="entry-meta">Aug 2024 – Present<br>Singapore</div>
+        <div>
+          <h3>Sleek</h3>
+          <p class="role">Machine Learning Engineer</p>
+          <ul>
+            <li>Built AI agents on Temporal that automate 85% of the targeted workflow at 99.5% precision, with durable and fault-tolerant execution.</li>
+            <li>Developed MCP servers using AWS AgentCore and AWS Lambda, giving AI agents secure and scalable access to internal tools and systems.</li>
+            <li>Created a centralized AI platform that gives teams across the company unified access to AWS Bedrock models, with built-in observability.</li>
+            <li>Built a centralized platform for LLM evaluations and observability, enabling tracing, monitoring and quality measurement across teams.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-meta">Jul – Dec 2023<br>Pune, Maharashtra</div>
+        <div>
+          <h3>Koushiki Innovision</h3>
+          <p class="role">AR/VR Intern</p>
+          <ul>
+            <li>Developed an interactive AR game for Android in Unity for children, turning classroom concepts into engaging hands-on experiences.</li>
+            <li>Designed and built multiple 2D and 3D educational games, covering gameplay logic, assets and UI.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <article class="entry">
+        <div class="entry-meta">2020 – 2024</div>
+        <div>
+          <h3>MIT World Peace University</h3>
+          <p class="role" style="margin-bottom:0">B.Tech. in Computer Science and Engineering · CGPA 9.26/10</p>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-meta">2018 – 2020</div>
+        <div>
+          <h3>Satish Pradhan Dnyansadhana College</h3>
+          <p class="role" style="margin-bottom:0">HSC · 80.77%</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="publications">
+      <h2 class="section-title">Publications</h2>
+      <div class="pub">
+        <h3>Interoperability between Blockchain Networks to support decentralized applications</h3>
+        <p>International Journal of Advances in Soft Computing and Intelligent Systems (IJASCIS) 2024 · Poster paper · February 2024</p>
+        <p style="margin-top:8px"><a href="https://sciencetransactions.com/index.php/ijascis/article/view/26/21" target="_blank" rel="noopener">Read the paper →</a></p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <header class="project-head">
+            <h3>AgentWorks</h3>
+            <a href="https://agentworks-web.up.railway.app/landing" target="_blank" rel="noopener">Live demo ↗</a>
+          </header>
+          <p class="project-sub">Multi-tenant dashboard for assigning tickets to autonomous AI agents.</p>
+          <ul class="project-points">
+            <li>Multi-provider LLM layer (OpenRouter, Anthropic, OpenAI, Claude Code CLI) with realtime updates over WebSockets.</li>
+            <li>Agent runtime with cancellable runs, progress-based stall detection, interrupt and approval flows, and live tool-call visibility.</li>
+            <li>Browser code view with branch diffs, plus chat with image attachments, voice input and #ticket/@agent mentions.</li>
+            <li>Deployed via Docker Compose, Railway and GitHub Actions CI, with per-company data isolation and JWT auth.</li>
+          </ul>
+          <ul class="tags"><li>TypeScript</li><li>Bun</li><li>Hono</li><li>React</li><li>PostgreSQL</li><li>WebSockets</li></ul>
+        </article>
+        <article class="project">
+          <header class="project-head">
+            <h3>Indian Sign Language Detection</h3>
+            <a href="https://github.com/aniketinamdar/ISL-Yolov5" target="_blank" rel="noopener">Code ↗</a>
+          </header>
+          <p class="project-sub">Real-time detection of Indian Sign Language using YOLOv5, trained on a custom dataset.</p>
+          <ul class="tags"><li>YOLOv5</li><li>Image Processing</li><li>Machine Learning</li></ul>
+        </article>
+        <article class="project">
+          <header class="project-head">
+            <h3>Insulin Recommendation</h3>
+            <a href="https://github.com/aniketinamdar/InsulinPrompt" target="_blank" rel="noopener">Code ↗</a>
+          </header>
+          <p class="project-sub">Predicts a diabetic patient's insulin dosage from blood sugar level, using a model trained on a custom dataset.</p>
+          <ul class="tags"><li>Machine Learning</li><li>GNB</li><li>Streamlit</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <dl class="skills">
+        <div class="skill-row"><dt>Languages</dt><dd>Python, TypeScript/JavaScript, Java, C++, C, C#</dd></div>
+        <div class="skill-row"><dt>AI &amp; Agents</dt><dd>AWS AgentCore, AWS Bedrock, LangGraph, Langfuse, MCP, Temporal</dd></div>
+        <div class="skill-row"><dt>Backend &amp; Frontend</dt><dd>FastAPI, NodeJS, Express, React</dd></div>
+        <div class="skill-row"><dt>Data &amp; Messaging</dt><dd>PostgreSQL, MongoDB, MariaDB, Kafka, NATS, Camunda</dd></div>
+        <div class="skill-row"><dt>Cloud &amp; DevOps</dt><dd>AWS (Lambda, Bedrock, AgentCore), Docker, Kubernetes, Git, Linux</dd></div>
+        <div class="skill-row"><dt>Spoken languages</dt><dd>English, Hindi, Marathi</dd></div>
+      </dl>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p style="color:var(--muted);margin:0">The best way to reach me is by email at <a href="mailto:aniketinamdar02@gmail.com">aniketinamdar02@gmail.com</a>, or on <a href="https://linkedin.com/in/inamdaraniket" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> Aniket Inamdar</span>
+      <span><a href="https://github.com/aniketinamdar" target="_blank" rel="noopener">GitHub</a> · <a href="https://linkedin.com/in/inamdaraniket" target="_blank" rel="noopener">LinkedIn</a></span>
+    </div>
+  </footer>
+</body>
+</html>
